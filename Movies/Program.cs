@@ -17,9 +17,9 @@ namespace Movies
 
         public void ToonInfo()
         {
-            Console.WriteLine($"Titel: {Titel}");
-            Console.WriteLine($"Genre: {Genre}");
-            Console.WriteLine($"Duur: {DuurInMinuten} minuten");
+            Console.WriteLine($"De titel van de film is {Titel}.");
+            Console.WriteLine($"Het genre van de film is {Genre}.");
+            Console.WriteLine($"De film duurt {DuurInMinuten} minuten.");
         }
     }
 
