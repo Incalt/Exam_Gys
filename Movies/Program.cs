@@ -7,12 +7,14 @@ namespace Movies
         public string Titel { get; }
         public string Genre { get; }
         public int DuurInMinuten { get; }
+        public int Leeftijdsgrens { get; }
 
-        public Film(string titel, string genre, int duurInMinuten)
+        public Film(string titel, string genre, int duurInMinuten, int leeftijdsgrens)
         {
             Titel = titel;
             Genre = genre;
             DuurInMinuten = duurInMinuten;
+            Leeftijdsgrens = leeftijdsgrens;
         }
 
         public void ToonInfo()
@@ -20,6 +22,7 @@ namespace Movies
             Console.WriteLine($"Titel: {Titel}");
             Console.WriteLine($"Genre: {Genre}");
             Console.WriteLine($"Duur: {DuurInMinuten} minuten");
+            Console.WriteLine($"Leeftijdsgrens: {Leeftijdsgrens} jaar");
         }
     }
 
@@ -27,7 +30,7 @@ namespace Movies
     {
         private static void Main()
         {
-            Film film = new Film("De Avontuur", "Actie", 120);
+            Film film = new Film("De Avontuur", "Actie", 120, 12);
             film.ToonInfo();
         }
     }
